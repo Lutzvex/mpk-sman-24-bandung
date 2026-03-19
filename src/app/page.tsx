@@ -100,7 +100,7 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col items-start bg-muted/30 p-4 rounded-xl border border-border/50 w-full sm:w-auto">
                   <span className="text-4xl font-extrabold text-emerald-500 flex items-center gap-3">
-                    <ClipboardList className="h-8 w-8 text-emerald-500/80" /> 28
+                    <ClipboardList className="h-8 w-8 text-emerald-500/80" /> 25
                   </span>
                   <span className="text-sm font-semibold tracking-wider uppercase text-muted-foreground mt-2">Program Kerja</span>
                 </div>

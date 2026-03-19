@@ -164,7 +164,7 @@ export default function About() {
               <h2 className="text-3xl font-bold tracking-tight">VISI</h2>
             </div>
             <p className="text-muted-foreground text-lg leading-relaxed flex-1 relative z-10">
-              &quot;Menjadikan MPK SMA Negeri 24 Bandung sebagai organisasi yang profesional, inovatif, dan kreatif, berlandaskan IMTAQ dan nilai-nilai kekeluargaan, dengan fokus pada solidaritas, pemanfaatan IPTEK, serta pengembangan potensi anggota untuk mendukung tujuan organisasi dan visi misi sekolah.&quot;
+              Menjadikan MPK SMA Negeri 24 Bandung sebagai organisasi yang profesional, inovatif, dan kreatif, berlandaskan IMTAQ dan nilai-nilai kekeluargaan, dengan fokus pada solidaritas, pemanfaatan IPTEK, serta pengembangan potensi anggota untuk mendukung tujuan organisasi dan visi misi sekolah.
             </p>
           </div>
         </AnimatedSection>
