@@ -24,10 +24,10 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center space-x-3">
-          <Image src="/assets/Logo_SMAN 24.png" alt="SMAN 24 Logo" width={36} height={36} className="object-contain hover:scale-105 transition-transform" />
-          <Image src="/assets/Logo_MPK.png" alt="MPK Logo" width={36} height={36} className="object-contain hover:scale-105 transition-transform" />
-          <span className="hidden md:inline-block text-xl font-bold tracking-tight text-foreground">MPK SMAN 24 BANDUNG</span>
+        <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
+          <Image src="/assets/Logo_SMAN 24.png" alt="SMAN 24 Logo" width={32} height={32} className="object-contain hover:scale-105 transition-transform" />
+          <Image src="/assets/Logo_MPK.png" alt="MPK Logo" width={32} height={32} className="object-contain hover:scale-105 transition-transform" />
+          <span className="text-[10px] sm:text-base md:text-xl font-bold tracking-tight text-foreground leading-tight max-w-[120px] sm:max-w-none">MPK SMAN 24 BANDUNG</span>
         </Link>
 
         {/* Desktop Nav */}

@@ -1,4 +1,5 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
+import Image from "next/image";
 
 export const metadata = {
   title: "Kontak Kami | MPK SMAN 24 Bandung",
@@ -7,15 +8,29 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
-      <AnimatedSection className="text-center mb-16 max-w-2xl mx-auto">
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4">
-          Kontak Kami
-        </h1>
-        <p className="text-lg text-muted-foreground">
-          Hubungi kami untuk menyampaikan aspirasi, masukan, atau pertanyaan Anda
-        </p>
-      </AnimatedSection>
+    <main className="w-full">
+      <div className="relative w-full h-[25vh] md:h-[40vh] min-h-[160px] md:min-h-[250px] mb-12 md:mb-16 overflow-hidden flex items-center">
+        <Image 
+          src="/assets/SMAN 24 BANDUNG.jpg" 
+          alt="SMAN 24 Bandung Header" 
+          fill 
+          className="object-cover object-[center_30%]" 
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <AnimatedSection>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-2 md:mb-4 drop-shadow-lg">
+              Kontak Kami
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl drop-shadow">
+              Hubungi kami untuk menyampaikan aspirasi, masukan, atau pertanyaan Anda
+            </p>
+          </AnimatedSection>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 pb-16 sm:px-6 lg:px-8 max-w-7xl">
 
       <div className="max-w-4xl mx-auto w-full">
         <AnimatedSection delay={0.2} className="flex flex-col space-y-10 mb-20 text-center md:text-left">
@@ -68,6 +83,7 @@ export default function Contact() {
           </div>
         </AnimatedSection>
       </div>
-    </div>
+      </div>
+    </main>
   );
 }

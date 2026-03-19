@@ -1,5 +1,5 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,23 +10,40 @@ export const metadata = {
 
 export default function Aspirasi() {
   return (
-    <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-5xl">
-      <AnimatedSection className="text-center mb-16">
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4 text-foreground">
-          Aspirasi
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Suaramu penting untuk kemajuan dan perbaikan bersama.
-        </p>
-      </AnimatedSection>
+    <main className="w-full">
+      <div className="relative w-full h-[25vh] md:h-[40vh] min-h-[160px] md:min-h-[250px] mb-12 md:mb-16 overflow-hidden flex items-center">
+        <Image 
+          src="/assets/SMAN 24 BANDUNG.jpg" 
+          alt="SMAN 24 Bandung Header" 
+          fill 
+          className="object-cover object-[center_30%]" 
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <AnimatedSection>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-2 md:mb-4 drop-shadow-lg">
+              Aspirasi
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl drop-shadow">
+              Suaramu penting untuk kemajuan dan perbaikan bersama.
+            </p>
+          </AnimatedSection>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 pb-16 sm:px-6 lg:px-8 max-w-5xl">
 
       <AnimatedSection delay={0.1}>
-        <div className="flex flex-col lg:flex-row gap-16 items-center pt-8">
+        <div className="mb-4 lg:hidden text-center md:text-left pt-6">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground">Aspirasi Berkala</h2>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center pt-2 lg:pt-8">
           
           {/* Content Column */}
           <div className="flex-1 space-y-6 order-2 lg:order-1">
-              <h2 className="text-3xl font-bold tracking-tight text-foreground">Aspirasi Berkala</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <h2 className="hidden lg:block text-3xl font-bold tracking-tight text-foreground">Aspirasi Berkala</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed text-center lg:text-left">
                 Aspirasi Berkala merupakan program MPK yang bertujuan untuk menampung dan menyalurkan aspirasi siswa secara rutin, sebagai bentuk partisipasi aktif dalam membangun lingkungan sekolah yang lebih baik, transparan, dan demokratis.
               </p>
               
@@ -40,7 +57,7 @@ export default function Aspirasi() {
                     "Mendukung terciptanya lingkungan sekolah yang kondusif dan transparan"
                   ].map((tujuan, index) => (
                     <li key={index} className="flex items-start">
-                      <CheckCircle2 className="h-5 w-5 text-emerald-500 mr-3 shrink-0 mt-1" />
+                      <span className="text-lg font-bold text-black dark:text-white mr-3 shrink-0 mt-1">{index + 1}.</span>
                       <span className="text-lg text-muted-foreground">{tujuan}</span>
                     </li>
                   ))}
@@ -75,6 +92,7 @@ export default function Aspirasi() {
 
         </div>
       </AnimatedSection>
-    </div>
+      </div>
+    </main>
   );
 }

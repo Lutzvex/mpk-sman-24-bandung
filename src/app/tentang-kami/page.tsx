@@ -116,40 +116,55 @@ const orgStructure = [
 
 export default function About() {
   return (
-    <div className="container mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <main className="w-full">
       
-      {/* Header */}
-      <AnimatedSection className="text-center md:max-w-3xl md:mx-auto mb-20">
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-6">
-          Tentang Kami
-        </h1>
-      </AnimatedSection>
+      {/* Full Width Header */}
+      <div className="relative w-full h-[25vh] md:h-[40vh] min-h-[160px] md:min-h-[250px] mb-12 md:mb-20 overflow-hidden flex items-center">
+        <Image 
+          src="/assets/SMAN 24 BANDUNG.jpg" 
+          alt="SMAN 24 Bandung Header" 
+          fill 
+          className="object-cover object-[center_30%]" 
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <AnimatedSection>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg">
+              Tentang Kami
+            </h1>
+          </AnimatedSection>
+        </div>
+      </div>
+
+      <div className="container mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+
 
       {/* Garda Aspirasi Section */}
-      <AnimatedSection delay={0.1} className="mb-24">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-12 pl-4 pr-4 md:pl-0 md:pr-0">
+      <AnimatedSection delay={0.1} className="mb-16 md:mb-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-16 pl-4 pr-4 md:pl-0 md:pr-0">
             
             {/* Logo Side */}
-            <div className="flex-shrink-0 flex justify-center w-full md:w-2/5 lg:w-1/3 mb-8 md:mb-0">
+            <div className="flex-shrink-0 flex justify-center w-full md:w-1/2 mb-4 md:mb-0">
               <Image 
                 src="/assets/Logo_MPK.png" 
                 alt="Logo MPK" 
-                width={360} 
-                height={360} 
-                className="object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                width={500} 
+                height={500} 
+                className="object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 w-1/2 sm:w-[40%] md:w-full max-w-[500px]"
               />
             </div>
 
             {/* Content Side */}
             <div className="flex flex-col flex-1">
-              <h2 className="text-3xl md:text-3xl font-bold mb-6 text-foreground leading-tight text-center md:text-left">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-foreground leading-tight text-center md:text-left">
                 Garda Aspirasi & Demokrasi SMAN 24 Bandung
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 text-center md:text-left">
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 md:mb-6 text-center md:text-left">
                 Sebagai lembaga tertinggi kesiswaan, MPK mengemban tanggung jawab dalam menjaga ekosistem demokrasi sekolah melalui lima fungsi utama:
               </p>
-              <ul className="space-y-6">
+              <ul className="space-y-3 md:space-y-4">
                 {[
                   { title: "Legislasi", desc: "Menyusun dan menetapkan aturan serta kebijakan organisasi siswa yang berlandaskan nilai keadilan dan kepentingan bersama." },
                   { title: "Aspirasi", desc: "Menjadi jembatan komunikasi yang aktif untuk menampung ide, kritik, dan saran dari seluruh siswa SMAN 24 Bandung untuk disampaikan kepada pihak sekolah." },
@@ -157,11 +172,11 @@ export default function About() {
                   { title: "Kaderisasi", desc: "Menyelenggarakan proses seleksi dan uji kelayakan bagi calon pengurus OSIS untuk memastikan keberlanjutan kepemimpinan yang berintegritas." },
                   { title: "Advokasi", desc: "Bertindak sebagai penengah atau mediator dalam menyelesaikan permasalahan antar-organisasi maupun isu kesiswaan lainnya dengan asas keadilan." }
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4">
-                    <span className="font-bold text-brand text-xl shrink-0 leading-none mt-1.5">{i + 1}.</span>
-                    <div>
-                      <span className="font-bold text-foreground text-lg">{item.title}: </span>
-                      <span className="text-muted-foreground text-md leading-relaxed">{item.desc}</span>
+                  <li key={i} className="flex items-start gap-3 md:gap-4">
+                    <span className="font-bold text-black dark:text-white text-base md:text-lg shrink-0 leading-none mt-0.5">{i + 1}.</span>
+                    <div className="text-xs sm:text-sm md:text-base leading-relaxed">
+                      <span className="font-bold text-foreground">{item.title}: </span>
+                      <span className="text-muted-foreground">{item.desc}</span>
                     </div>
                   </li>
                 ))}
@@ -308,6 +323,7 @@ export default function About() {
           ))}
         </div>
       </AnimatedSection>
-    </div>
+      </div>
+    </main>
   );
 }
