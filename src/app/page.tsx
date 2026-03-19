@@ -26,26 +26,24 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-white mb-6"
+            className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl"
           >
             Selamat Datang di MPK SMAN 24 Bandung
           </motion.h1>
-
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto"
+            transition={{ delay: 0.2, duration: 0.7 }}
+            className="mx-auto mt-6 max-w-2xl text-lg text-gray-200 md:text-xl"
           >
             Wadah aspirasi siswa, pengawas kinerja OSIS, dan penggerak perubahan
             positif di lingkungan sekolah.
           </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
+            transition={{ delay: 0.4, duration: 0.7 }}
+            className="mt-10 flex flex-col justify-center gap-4 sm:flex-row"
           >
             <Link
               href="/aspirasi"
