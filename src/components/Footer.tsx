@@ -74,7 +74,7 @@ export function Footer() {
                   href="/contact"
                   className="text-sm text-white/70 hover:text-brand transition-colors"
                 >
-                  Contact
+                  Kontak
                 </Link>
               </li>
             </ul>
