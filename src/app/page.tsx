@@ -2,7 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Users, ClipboardList } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { AnimatedNumber } from "@/components/AnimatedNumber";
 
 export default function Hero() {
   return (
@@ -93,14 +94,14 @@ export default function Hero() {
               {/* Stats */}
               <div className="flex gap-8 mb-10">
                 <div className="flex flex-col items-start bg-muted/30 p-4 rounded-xl border border-border/50 w-full sm:w-auto">
-                  <span className="text-4xl font-extrabold text-blue-500 flex items-center gap-3">
-                    <Users className="h-8 w-8 text-blue-500/80" /> 24
+                  <span className="text-4xl font-extrabold text-foreground flex items-center gap-3">
+                    <AnimatedNumber value={24} />
                   </span>
                   <span className="text-sm font-semibold tracking-wider uppercase text-muted-foreground mt-2">Anggota</span>
                 </div>
                 <div className="flex flex-col items-start bg-muted/30 p-4 rounded-xl border border-border/50 w-full sm:w-auto">
-                  <span className="text-4xl font-extrabold text-emerald-500 flex items-center gap-3">
-                    <ClipboardList className="h-8 w-8 text-emerald-500/80" /> 25
+                  <span className="text-4xl font-extrabold text-foreground flex items-center gap-3">
+                    <AnimatedNumber value={25} />
                   </span>
                   <span className="text-sm font-semibold tracking-wider uppercase text-muted-foreground mt-2">Program Kerja</span>
                 </div>

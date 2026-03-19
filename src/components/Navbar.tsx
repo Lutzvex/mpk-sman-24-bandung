@@ -37,8 +37,8 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-brand",
-                pathname === link.href ? "text-brand" : "text-muted-foreground"
+                "text-sm font-medium transition-colors hover:text-foreground",
+                pathname === link.href ? "text-foreground font-semibold" : "text-muted-foreground"
               )}
             >
               {link.name}
@@ -71,7 +71,7 @@ export function Navbar() {
                 className={cn(
                   "block rounded-md px-3 py-2 text-base font-medium transition-colors",
                   pathname === link.href
-                    ? "bg-brand/10 text-brand"
+                    ? "bg-foreground/10 text-foreground font-semibold"
                     : "text-muted-foreground hover:bg-muted"
                 )}
               >

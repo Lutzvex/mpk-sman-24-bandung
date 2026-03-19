@@ -1,6 +1,5 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Card } from "@/components/Card";
-import { ShieldCheck, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
@@ -81,7 +80,8 @@ const orgStructure = [
           { role: "EVALUATOR 3", name: "Adla Muhammad Firdaus" },
           { role: "EVALUATOR 4", name: "Idham Maulana Hakim" },
           { role: "EVALUATOR 5", name: "Muhammad Gaza Saputra" }
-        ]
+        ],
+        featured: true
       }
     ]
   },
@@ -127,31 +127,46 @@ export default function About() {
 
       {/* Garda Aspirasi Section */}
       <AnimatedSection delay={0.1} className="mb-24">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground leading-tight text-center md:text-left">
-              Garda Aspirasi & Demokrasi SMAN 24 Bandung
-            </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Sebagai lembaga tertinggi kesiswaan, MPK mengemban tanggung jawab dalam menjaga ekosistem demokrasi sekolah melalui lima fungsi utama:
-            </p>
-            <ul className="space-y-6">
-              {[
-                { title: "Legislasi", desc: "Menyusun dan menetapkan aturan serta kebijakan organisasi siswa yang berlandaskan nilai keadilan dan kepentingan bersama." },
-                { title: "Aspirasi", desc: "Menjadi jembatan komunikasi yang aktif untuk menampung ide, kritik, dan saran dari seluruh siswa SMAN 24 Bandung untuk disampaikan kepada pihak sekolah." },
-                { title: "Supervisi & Evaluasi", desc: "Memantau jalannya program kerja OSIS secara objektif serta memberikan penilaian performa demi kualitas kegiatan yang lebih baik." },
-                { title: "Kaderisasi", desc: "Menyelenggarakan proses seleksi dan uji kelayakan bagi calon pengurus OSIS untuk memastikan keberlanjutan kepemimpinan yang berintegritas." },
-                { title: "Advokasi", desc: "Bertindak sebagai penengah atau mediator dalam menyelesaikan permasalahan antar-organisasi maupun isu kesiswaan lainnya dengan asas keadilan." }
-              ].map((item, i) => (
-                <li key={i} className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-brand mr-4 shrink-0 mt-1" />
-                  <div>
-                    <span className="font-bold text-foreground text-lg">{item.title}: </span>
-                    <span className="text-muted-foreground text-md leading-relaxed">{item.desc}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-12 pl-4 pr-4 md:pl-0 md:pr-0">
+            
+            {/* Logo Side */}
+            <div className="flex-shrink-0 flex justify-center w-full md:w-2/5 lg:w-1/3 mb-8 md:mb-0">
+              <Image 
+                src="/assets/Logo_MPK.png" 
+                alt="Logo MPK" 
+                width={360} 
+                height={360} 
+                className="object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Content Side */}
+            <div className="flex flex-col flex-1">
+              <h2 className="text-3xl md:text-3xl font-bold mb-6 text-foreground leading-tight text-center md:text-left">
+                Garda Aspirasi & Demokrasi SMAN 24 Bandung
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 text-center md:text-left">
+                Sebagai lembaga tertinggi kesiswaan, MPK mengemban tanggung jawab dalam menjaga ekosistem demokrasi sekolah melalui lima fungsi utama:
+              </p>
+              <ul className="space-y-6">
+                {[
+                  { title: "Legislasi", desc: "Menyusun dan menetapkan aturan serta kebijakan organisasi siswa yang berlandaskan nilai keadilan dan kepentingan bersama." },
+                  { title: "Aspirasi", desc: "Menjadi jembatan komunikasi yang aktif untuk menampung ide, kritik, dan saran dari seluruh siswa SMAN 24 Bandung untuk disampaikan kepada pihak sekolah." },
+                  { title: "Supervisi & Evaluasi", desc: "Memantau jalannya program kerja OSIS secara objektif serta memberikan penilaian performa demi kualitas kegiatan yang lebih baik." },
+                  { title: "Kaderisasi", desc: "Menyelenggarakan proses seleksi dan uji kelayakan bagi calon pengurus OSIS untuk memastikan keberlanjutan kepemimpinan yang berintegritas." },
+                  { title: "Advokasi", desc: "Bertindak sebagai penengah atau mediator dalam menyelesaikan permasalahan antar-organisasi maupun isu kesiswaan lainnya dengan asas keadilan." }
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="font-bold text-brand text-xl shrink-0 leading-none mt-1.5">{i + 1}.</span>
+                    <div>
+                      <span className="font-bold text-foreground text-lg">{item.title}: </span>
+                      <span className="text-muted-foreground text-md leading-relaxed">{item.desc}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </AnimatedSection>
@@ -199,14 +214,16 @@ export default function About() {
           <div className="flex flex-col bg-transparent">
             
             {/* Image Side */}
-            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] min-h-[300px]">
+            <div className="relative w-full overflow-hidden flex flex-col items-center justify-center bg-zinc-900/5 dark:bg-zinc-900/20 rounded-t-3xl border border-border/50">
               <Image 
                 src="/assets/TRIXIIIUM.jpeg" 
                 alt="TRIXIIIUM MPK 13" 
-                fill 
-                className="object-cover"
+                width={1920}
+                height={1080}
+                className="w-full h-auto max-h-[70vh] object-contain"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 md:p-10">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 md:p-10 pointer-events-none">
                 <h3 className="text-3xl md:text-4xl font-black text-white mb-2 tracking-tight">TRIXIIIUM</h3>
                 <p className="text-white/80 font-medium tracking-wide text-sm md:text-base">Equality, Integrity, Morality — To the Top, Never Stop</p>
               </div>
@@ -243,7 +260,6 @@ export default function About() {
       <AnimatedSection delay={0.5} className="mb-32">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold flex items-center justify-center gap-3 tracking-tight">
-            <ShieldCheck className="h-10 w-10 text-brand" />
             Struktur Organisasi
           </h2>
           <p className="text-muted-foreground mt-4 text-lg">
