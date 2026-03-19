@@ -25,12 +25,25 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
-          <Image src="/assets/Logo_SMAN 24.png" alt="SMAN 24 Logo" width={32} height={32} className="object-contain hover:scale-105 transition-transform" />
-          <Image src="/assets/Logo_MPK.png" alt="MPK Logo" width={32} height={32} className="object-contain hover:scale-105 transition-transform" />
-          <span className="text-[10px] sm:text-base md:text-xl font-bold tracking-tight text-foreground leading-tight max-w-[120px] sm:max-w-none">MPK SMAN 24 BANDUNG</span>
+          <Image
+            src="/assets/Logo_SMAN 24.png"
+            alt="SMAN 24 Logo"
+            width={32}
+            height={32}
+            className="object-contain hover:scale-105 transition-transform"
+          />
+          <Image
+            src="/assets/Logo_MPK.png"
+            alt="MPK Logo"
+            width={32}
+            height={32}
+            className="object-contain hover:scale-105 transition-transform"
+          />
+          <span className="text-[10px] sm:text-base md:text-xl font-bold tracking-tight text-foreground leading-tight max-w-[120px] sm:max-w-none">
+            MPK SMAN 24 BANDUNG
+          </span>
         </Link>
 
-        
         <div className="hidden md:flex items-center space-x-6">
           {links.map((link) => (
             <Link
@@ -38,7 +51,9 @@ export function Navbar() {
               href={link.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-foreground",
-                pathname === link.href ? "text-foreground font-semibold" : "text-muted-foreground"
+                pathname === link.href
+                  ? "text-foreground font-semibold"
+                  : "text-muted-foreground",
               )}
             >
               {link.name}
@@ -47,7 +62,6 @@ export function Navbar() {
           <ThemeToggle />
         </div>
 
-        
         <div className="flex md:flex-none md:hidden items-center space-x-4">
           <ThemeToggle />
           <button
@@ -59,7 +73,6 @@ export function Navbar() {
         </div>
       </div>
 
-      
       {isOpen && (
         <div className="md:hidden border-t border-border/40 bg-background">
           <div className="space-y-1 px-4 pb-4 pt-2">
@@ -72,7 +85,7 @@ export function Navbar() {
                   "block rounded-md px-3 py-2 text-base font-medium transition-colors",
                   pathname === link.href
                     ? "bg-foreground/10 text-foreground font-semibold"
-                    : "text-muted-foreground hover:bg-muted"
+                    : "text-muted-foreground hover:bg-muted",
                 )}
               >
                 {link.name}

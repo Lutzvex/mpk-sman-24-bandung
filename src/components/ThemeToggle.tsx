@@ -16,7 +16,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       <button
         className={cn(
           "relative inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-transparent p-0 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand",
-          className
+          className,
         )}
         aria-label="Toggle theme"
         disabled
@@ -35,7 +35,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       onClick={toggleTheme}
       className={cn(
         "relative inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-transparent p-0 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand transition-colors",
-        className
+        className,
       )}
       aria-label="Toggle theme"
     >

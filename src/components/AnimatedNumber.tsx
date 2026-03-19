@@ -17,7 +17,7 @@ export function AnimatedNumber({ value }: { value: number }) {
         const elapsedTime = currentTime - startTime;
         if (elapsedTime < duration) {
           const progress = elapsedTime / duration;
-          
+
           const easeOut = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
           setCount(Math.floor(easeOut * value));
           requestAnimationFrame(updateCounter);

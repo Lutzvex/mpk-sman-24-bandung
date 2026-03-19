@@ -6,13 +6,19 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   isHoverable?: boolean;
 }
 
-export function Card({ className, children, isHoverable = false, ...props }: CardProps) {
+export function Card({
+  className,
+  children,
+  isHoverable = false,
+  ...props
+}: CardProps) {
   return (
     <div
       className={cn(
         "rounded-2xl border border-border bg-card text-card-foreground shadow-sm transition-all duration-300",
-        isHoverable && "hover:shadow-lg hover:-translate-y-1 hover:border-brand/30 dark:hover:shadow-white/5",
-        className
+        isHoverable &&
+          "hover:shadow-lg hover:-translate-y-1 hover:border-brand/30 dark:hover:shadow-white/5",
+        className,
       )}
       {...props}
     >
