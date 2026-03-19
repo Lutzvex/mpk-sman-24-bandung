@@ -68,7 +68,7 @@ export default function Contact() {
           
         </AnimatedSection>
 
-        {/* Google Maps Section */}
+        
         <AnimatedSection delay={0.4} className="w-full mb-16">
           <h2 className="text-2xl md:text-3xl font-extrabold mb-6 text-center md:text-left">Lokasi SMAN 24 Bandung</h2>
           <div className="w-full overflow-hidden rounded-xl border border-border/50 shadow-lg relative aspect-[16/9] md:aspect-[21/9]">

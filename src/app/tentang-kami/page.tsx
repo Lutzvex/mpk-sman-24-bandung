@@ -118,7 +118,7 @@ export default function About() {
   return (
     <main className="w-full">
       
-      {/* Full Width Header */}
+      
       <div className="relative w-full h-[25vh] md:h-[40vh] min-h-[160px] md:min-h-[250px] mb-12 md:mb-20 overflow-hidden flex items-center">
         <Image 
           src="/assets/SMAN 24 BANDUNG.jpg" 
@@ -140,12 +140,12 @@ export default function About() {
       <div className="container mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
 
 
-      {/* Garda Aspirasi Section */}
+      
       <AnimatedSection delay={0.1} className="mb-16 md:mb-24">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-16 pl-4 pr-4 md:pl-0 md:pr-0">
             
-            {/* Logo Side */}
+            
             <div className="flex-shrink-0 flex justify-center w-full md:w-1/2 mb-4 md:mb-0">
               <Image 
                 src="/assets/Logo_MPK.png" 
@@ -156,7 +156,7 @@ export default function About() {
               />
             </div>
 
-            {/* Content Side */}
+            
             <div className="flex flex-col flex-1">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-foreground leading-tight text-center md:text-left">
                 Garda Aspirasi & Demokrasi SMAN 24 Bandung
@@ -186,7 +186,7 @@ export default function About() {
         </div>
       </AnimatedSection>
 
-      {/* Visi & Misi */}
+      
       <div className="grid gap-8 md:grid-cols-2 lg:gap-12 mb-24">
         <AnimatedSection delay={0.2} className="h-full">
           <div className="md:px-2 md:py-4 h-full flex flex-col relative overflow-hidden">
@@ -223,12 +223,12 @@ export default function About() {
         </AnimatedSection>
       </div>
 
-      {/* TRIXIIIUM Section */}
+      
       <AnimatedSection delay={0.4} className="mb-24">
         <div className="overflow-hidden border-none shadow-none">
           <div className="flex flex-col bg-transparent">
             
-            {/* Image Side */}
+            
             <div className="relative w-full overflow-hidden flex flex-col items-center justify-center bg-zinc-900/5 dark:bg-zinc-900/20 rounded-t-3xl border border-border/50">
               <Image 
                 src="/assets/TRIXIIIUM.jpeg" 
@@ -244,7 +244,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Text Side */}
+            
             <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center">
               <div className="inline-block px-5 py-2 rounded-full bg-brand/10 text-brand font-bold text-sm mb-8 w-fit tracking-widest uppercase">
                 [ WELCOME TRIXIIIUM ]
@@ -271,7 +271,7 @@ export default function About() {
         </div>
       </AnimatedSection>
 
-      {/* Struktur Organisasi */}
+      
       <AnimatedSection delay={0.5} className="mb-32">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold flex items-center justify-center gap-3 tracking-tight">

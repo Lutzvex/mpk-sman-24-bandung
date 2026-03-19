@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <main className="flex flex-col items-center w-full">
       <section className="relative w-full min-h-[85vh] md:min-h-0 md:aspect-[21/9] flex flex-col items-center justify-center overflow-hidden py-20 md:py-0">
-      {/* Background Image */}
+      
       <Image
         src="/assets/MPK Photo Studio.jpeg"
         alt="MPK SMAN 24"
@@ -18,16 +18,16 @@ export default function Hero() {
         className="object-cover object-[center_30%]"
       />
 
-      {/* Gradient Overlay (Cinematic) */}
+      
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
 
-      {/* Subtle Glow Layer */}
+      
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.3),transparent_70%)]" />
 
-      {/* Content */}
+      
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
 
-        {/* Title */}
+        
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function Hero() {
           Selamat Datang di MPK SMAN 24 Bandung
         </motion.h1>
 
-        {/* Subtitle */}
+        
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export default function Hero() {
           positif di lingkungan sekolah.
         </motion.p>
 
-        {/* Buttons */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export default function Hero() {
       </div>
     </section>
 
-      {/* Tentang Kami Summary Section */}
+      
       <section className="w-full py-20 md:py-32 bg-background border-t border-border/50">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="mb-8 lg:hidden text-center md:text-left">
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             
-            {/* Image Column */}
+            
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
             </motion.div>
 
-            {/* Content Column */}
+            
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ export default function Hero() {
                 MPK SMAN 24 Bandung merupakan lembaga perwakilan siswa yang berfungsi sebagai representatif kelas serta mitra kerja OSIS dalam menjalankan kegiatan kesiswaan di sekolah. Melalui perannya sebagai aspirator, evaluator, dan planner, MPK berkomitmen menyalurkan aspirasi siswa, mengevaluasi program kerja, serta merancang gagasan demi terciptanya organisasi yang aktif, transparan, dan bertanggung jawab.
               </p>
               
-              {/* Stats */}
+              
               <div className="flex gap-4 sm:gap-8 mb-10 w-full">
                 <div className="flex flex-col items-center sm:items-start bg-muted/30 p-4 rounded-xl border border-border/50 flex-1">
                   <span className="text-3xl sm:text-4xl font-extrabold text-foreground flex items-center gap-3">
@@ -142,7 +142,7 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* Aspirasi Berkala Section */}
+      
       <section className="w-full py-20 md:py-32 bg-muted/20 border-t border-border/50">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="mb-6 lg:hidden text-center md:text-left">
@@ -153,7 +153,7 @@ export default function Hero() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             
-            {/* Image Column */}
+            
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -170,7 +170,7 @@ export default function Hero() {
               />
             </motion.div>
 
-            {/* Content Column */}
+            
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}

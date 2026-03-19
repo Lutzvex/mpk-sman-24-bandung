@@ -40,7 +40,7 @@ export default function Aspirasi() {
         </div>
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center pt-2 lg:pt-8">
           
-          {/* Content Column */}
+          
           <div className="flex-1 space-y-6 order-2 lg:order-1">
               <h2 className="hidden lg:block text-3xl font-bold tracking-tight text-foreground">Aspirasi Berkala</h2>
               <p className="text-lg text-muted-foreground leading-relaxed text-center lg:text-left">
@@ -77,7 +77,7 @@ export default function Aspirasi() {
               </div>
             </div>
             
-            {/* Image Column */}
+            
             <div className="w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2">
               <div className="relative w-full aspect-square max-w-lg hover:scale-105 transition-transform duration-700 drop-shadow-2xl">
                 <Image

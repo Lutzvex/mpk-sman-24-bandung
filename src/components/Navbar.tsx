@@ -30,7 +30,7 @@ export function Navbar() {
           <span className="text-[10px] sm:text-base md:text-xl font-bold tracking-tight text-foreground leading-tight max-w-[120px] sm:max-w-none">MPK SMAN 24 BANDUNG</span>
         </Link>
 
-        {/* Desktop Nav */}
+        
         <div className="hidden md:flex items-center space-x-6">
           {links.map((link) => (
             <Link
@@ -47,7 +47,7 @@ export function Navbar() {
           <ThemeToggle />
         </div>
 
-        {/* Mobile Nav Toggle */}
+        
         <div className="flex md:flex-none md:hidden items-center space-x-4">
           <ThemeToggle />
           <button
@@ -59,7 +59,7 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      
       {isOpen && (
         <div className="md:hidden border-t border-border/40 bg-background">
           <div className="space-y-1 px-4 pb-4 pt-2">
