@@ -3,8 +3,8 @@ import { Card } from "@/components/Card";
 import { Mail, MapPin, Send, MessageSquare } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Us | MPK SMAN 24 Bandung",
-  description: "Get in touch with us",
+  title: "Kontak Kami | MPK SMAN 24 Bandung",
+  description: "Hubungi kami untuk menyampaikan aspirasi, masukan, atau pertanyaan Anda",
 };
 
 export default function Contact() {
@@ -12,10 +12,10 @@ export default function Contact() {
     <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-7xl">
       <AnimatedSection className="text-center mb-16 max-w-2xl mx-auto">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4">
-          Get in <span className="text-brand">Touch</span>
+          Kontak Kami
         </h1>
         <p className="text-lg text-muted-foreground">
-          Have an aspiration, feedback, or a question? Reach out to us. We are here to listen and act.
+          Hubungi kami untuk menyampaikan aspirasi, masukan, atau pertanyaan Anda
         </p>
       </AnimatedSection>
 

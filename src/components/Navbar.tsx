@@ -9,11 +9,12 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { name: "Home", href: "/" },
+  { name: "Beranda", href: "/" },
   { name: "Tentang Kami", href: "/tentang-kami" },
   { name: "Programs", href: "/programs" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Contact", href: "/contact" },
+  { name: "Aspirasi", href: "/aspirasi" },
+  { name: "Galeri", href: "/gallery" },
+  { name: "Kontak", href: "/contact" },
 ];
 
 export function Navbar() {

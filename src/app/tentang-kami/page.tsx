@@ -1,12 +1,118 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Card } from "@/components/Card";
-import { Target, Lightbulb, ShieldCheck, CheckCircle } from "lucide-react";
+import { ShieldCheck, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
   title: "Tentang Kami | MPK SMAN 24 Bandung",
   description: "Visi, Misi, Garda Aspirasi, dan Pengenalan TRIXIIIUM MPK SMAN 24 Bandung.",
 };
+
+const orgStructure = [
+  {
+    category: "Pengurus Inti",
+    items: [
+      {
+        image: "/assets/Ketua umum dan wakil ketua umum mpk.jpeg",
+        members: [
+          { role: "KETUA UMUM", name: "Fathan Dwi Raditya" },
+          { role: "WAKIL KETUA UMUM", name: "Ana Nurul Mahabatain Wijayanti" }
+        ],
+        featured: true
+      },
+      {
+        image: "/assets/Sekretaris MPK.jpeg",
+        members: [
+          { role: "SEKRETARIS 1", name: "Hana Khairunnisa" },
+          { role: "SEKRETARIS 2", name: "Zahira Kekasih Hati" }
+        ]
+      },
+      {
+        image: "/assets/Bendahara MPK.jpeg",
+        members: [
+          { role: "BENDAHARA 1", name: "Keiza Abiyyaqzhan Hamdani" },
+          { role: "BENDAHARA 2", name: "Lathifah Dewi Kirana" }
+        ]
+      }
+    ]
+  },
+  {
+    category: "Komisi A (Aspirasi & Penyaluran)",
+    items: [
+      {
+        image: "/assets/Ketua Komisi A MPK.jpeg",
+        members: [
+          { role: "KETUA KOMISI A", name: "Friska Agustina Wulandari" }
+        ],
+        featured: true
+      },
+      {
+        image: "/assets/Koordinator Aspirasi Sekolah.jpeg",
+        members: [
+          { role: "KOORDINATOR ASPIRASI SEKOLAH 1", name: "Farrel Ibnu Khiar" },
+          { role: "KOORDINATOR ASPIRASI SEKOLAH 2", name: "Rachma Nuraini" },
+          { role: "KOORDINATOR ASPIRASI SEKOLAH 3", name: "Raisya Shafa Rafidah" }
+        ]
+      },
+      {
+        image: "/assets/Koordinator OSIS.jpeg",
+        members: [
+          { role: "KOORDINATOR OSIS 1", name: "Tsaabitah Abidah Hasna" },
+          { role: "KOORDINATOR OSIS 2", name: "Alfan Maulana Setiawan" }
+        ]
+      }
+    ]
+  },
+  {
+    category: "Komisi B (Pengawasan & Evaluasi)",
+    items: [
+      {
+        image: "/assets/Ketua Komisi B MPK.jpeg",
+        members: [
+          { role: "KETUA KOMISI B", name: "Rizky Herlambang Putra Sumirat" }
+        ],
+        featured: true
+      },
+      {
+        image: "/assets/Evaluator MPK.jpeg",
+        members: [
+          { role: "EVALUATOR 1", name: "Advaya Fathin Satria" },
+          { role: "EVALUATOR 2", name: "Fiisabiila Radisty Reflianti" },
+          { role: "EVALUATOR 3", name: "Adla Muhammad Firdaus" },
+          { role: "EVALUATOR 4", name: "Idham Maulana Hakim" },
+          { role: "EVALUATOR 5", name: "Muhammad Gaza Saputra" }
+        ]
+      }
+    ]
+  },
+  {
+    category: "Komisi C (Hukum & Etika Disiplin)",
+    items: [
+      {
+        image: "/assets/Ketua Komisi C MPK.jpeg",
+        members: [
+          { role: "KETUA KOMISI C", name: "Muhammad Adli Huzaeni" }
+        ],
+        featured: true
+      },
+      {
+        image: "/assets/Koordinator Planner Internal.jpeg",
+        members: [
+          { role: "KOORDINATOR PLANNER INTERNAL 1", name: "Raffi Muhammad Aziz" },
+          { role: "KOORDINATOR PLANNER INTERNAL 2", name: "Almaira Tharazayna Adityan" },
+          { role: "KOORDINATOR PLANNER INTERNAL 3", name: "Anisa Putri Gunawan" }
+        ]
+      },
+      {
+        image: "/assets/Koordinator Planner Eksternal.jpeg",
+        members: [
+          { role: "KOORDINATOR PLANNER EKSTERNAL 1", name: "Fathir Raihan Muzakki" },
+          { role: "KOORDINATOR PLANNER EKSTERNAL 2", name: "Alynda Natasya" }
+        ]
+      }
+    ]
+  }
+];
 
 export default function About() {
   return (
@@ -15,29 +121,16 @@ export default function About() {
       {/* Header */}
       <AnimatedSection className="text-center md:max-w-3xl md:mx-auto mb-20">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-6">
-          Tentang Kami <span className="text-brand">MPK SMAN 24</span>
+          Tentang Kami
         </h1>
-        <p className="text-lg text-muted-foreground">
-          Majelis Perwakilan Kelas is the legislative and supervisory body of the student organization in SMAN 24 Bandung.
-        </p>
       </AnimatedSection>
 
       {/* Garda Aspirasi Section */}
       <AnimatedSection delay={0.1} className="mb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center lg:justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 drop-shadow-2xl hover:scale-105 transition-transform duration-500">
-              <Image 
-                src="/assets/Logo_MPK.png" 
-                alt="Logo MPK SMAN 24 Bandung" 
-                fill 
-                className="object-contain" 
-              />
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto">
           <div className="flex flex-col">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground leading-tight">
-              Garda Aspirasi & Demokrasi <br className="hidden md:block"/><span className="text-brand">SMAN 24 Bandung</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground leading-tight text-center md:text-left">
+              Garda Aspirasi & Demokrasi SMAN 24 Bandung
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
               Sebagai lembaga tertinggi kesiswaan, MPK mengemban tanggung jawab dalam menjaga ekosistem demokrasi sekolah melalui lima fungsi utama:
@@ -66,31 +159,19 @@ export default function About() {
       {/* Visi & Misi */}
       <div className="grid gap-8 md:grid-cols-2 lg:gap-12 mb-24">
         <AnimatedSection delay={0.2} className="h-full">
-          <Card className="p-8 md:p-10 h-full flex flex-col relative overflow-hidden">
-            <div className="absolute top-0 right-0 p-8 opacity-5">
-              <Target className="h-40 w-40" />
-            </div>
-            <div className="flex items-center space-x-4 mb-6 relative z-10">
-              <div className="p-3 rounded-xl bg-brand/10 text-brand">
-                <Target className="h-8 w-8" />
-              </div>
+          <div className="md:px-2 md:py-4 h-full flex flex-col relative overflow-hidden">
+            <div className="flex items-center mb-6 relative z-10">
               <h2 className="text-3xl font-bold tracking-tight">VISI</h2>
             </div>
             <p className="text-muted-foreground text-lg leading-relaxed flex-1 relative z-10">
               &quot;Menjadikan MPK SMA Negeri 24 Bandung sebagai organisasi yang profesional, inovatif, dan kreatif, berlandaskan IMTAQ dan nilai-nilai kekeluargaan, dengan fokus pada solidaritas, pemanfaatan IPTEK, serta pengembangan potensi anggota untuk mendukung tujuan organisasi dan visi misi sekolah.&quot;
             </p>
-          </Card>
+          </div>
         </AnimatedSection>
 
         <AnimatedSection delay={0.3} className="h-full">
-          <Card className="p-8 md:p-10 h-full flex flex-col relative overflow-hidden">
-            <div className="absolute top-0 right-0 p-8 opacity-5">
-              <Lightbulb className="h-40 w-40" />
-            </div>
-            <div className="flex items-center space-x-4 mb-8 relative z-10">
-              <div className="p-3 rounded-xl bg-amber-500/10 text-amber-500">
-                <Lightbulb className="h-8 w-8" />
-              </div>
+          <div className="md:px-2 md:py-4 h-full flex flex-col relative overflow-hidden">
+            <div className="flex items-center mb-8 relative z-10">
               <h2 className="text-3xl font-bold tracking-tight">MISI</h2>
             </div>
             <ul className="space-y-4 text-muted-foreground text-lg flex-1 relative z-10">
@@ -103,22 +184,22 @@ export default function About() {
                 "Menciptakan lingkungan yang harmonis dan produktif"
               ].map((misi, i) => (
                 <li key={i} className="flex items-start">
-                  <span className="text-amber-500 font-bold mr-4 text-xl leading-none mt-1">{i + 1}.</span>
+                  <span className="text-foreground font-bold mr-4 text-xl leading-none mt-1">{i + 1}.</span>
                   <span className="leading-snug">{misi}</span>
                 </li>
               ))}
             </ul>
-          </Card>
+          </div>
         </AnimatedSection>
       </div>
 
       {/* TRIXIIIUM Section */}
       <AnimatedSection delay={0.4} className="mb-24">
-        <Card className="overflow-hidden border-border/50 shadow-xl">
-          <div className="grid grid-cols-1 lg:grid-cols-5 bg-card">
+        <div className="overflow-hidden border-none shadow-none">
+          <div className="flex flex-col bg-transparent">
             
             {/* Image Side */}
-            <div className="lg:col-span-2 relative aspect-square lg:aspect-auto h-full min-h-[400px] lg:min-h-[500px]">
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9] min-h-[300px]">
               <Image 
                 src="/assets/TRIXIIIUM.jpeg" 
                 alt="TRIXIIIUM MPK 13" 
@@ -132,7 +213,7 @@ export default function About() {
             </div>
 
             {/* Text Side */}
-            <div className="lg:col-span-3 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+            <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center">
               <div className="inline-block px-5 py-2 rounded-full bg-brand/10 text-brand font-bold text-sm mb-8 w-fit tracking-widest uppercase">
                 [ WELCOME TRIXIIIUM ]
               </div>
@@ -155,40 +236,60 @@ export default function About() {
             </div>
 
           </div>
-        </Card>
+        </div>
       </AnimatedSection>
 
       {/* Struktur Organisasi */}
-      <AnimatedSection delay={0.5} className="mb-12">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold flex items-center justify-center gap-3">
-            <ShieldCheck className="h-8 w-8 text-brand" />
+      <AnimatedSection delay={0.5} className="mb-32">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-extrabold flex items-center justify-center gap-3 tracking-tight">
+            <ShieldCheck className="h-10 w-10 text-brand" />
             Struktur Organisasi
           </h2>
+          <p className="text-muted-foreground mt-4 text-lg">
+            Anggota dan Pengurus MPK SMAN 24 Bandung
+          </p>
         </div>
-        <div className="max-w-4xl mx-auto">
-          <Card className="p-6 md:p-12 text-center border-t-4 border-t-brand">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 border border-border rounded-xl bg-background shadow-sm hover:-translate-y-1 transition-transform">
-                <h3 className="text-xl font-bold text-foreground">Ketua Umum</h3>
-                <p className="text-sm text-muted-foreground mt-2">Leading the organization</p>
+        
+        <div className="max-w-6xl mx-auto space-y-24">
+          {orgStructure.map((category, idx) => (
+            <div key={idx} className="flex flex-col items-center">
+              <div className="inline-block px-6 py-2 rounded-full bg-brand/10 text-brand font-bold text-sm mb-10 w-fit tracking-widest uppercase text-center mx-auto">
+                {category.category}
               </div>
-              <div className="p-6 border border-border rounded-xl bg-background shadow-sm hover:-translate-y-1 transition-transform">
-                <h3 className="text-xl font-bold text-foreground">Sekretaris</h3>
-                <p className="text-sm text-muted-foreground mt-2">Administrative tasks</p>
-              </div>
-              <div className="p-6 border border-border rounded-xl bg-background shadow-sm hover:-translate-y-1 transition-transform">
-                <h3 className="text-xl font-bold text-foreground">Bendahara</h3>
-                <p className="text-sm text-muted-foreground mt-2">Financial management</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full justify-center">
+                {category.items.map((item, itemIdx) => (
+                  <Card 
+                    key={itemIdx} 
+                    className={`overflow-hidden border border-border/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-card flex flex-col ${
+                      item.featured ? "md:col-span-2 max-w-2xl mx-auto w-full" : ""
+                    }`}
+                  >
+                    <div className="relative w-full aspect-[4/3] bg-muted/30">
+                      <Image
+                        src={item.image}
+                        alt={item.members.map(m => m.name).join(", ")}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </div>
+                    <div className="p-6 md:p-8 flex flex-col justify-center bg-card flex-1 border-t border-border/50">
+                      <ul className="space-y-4">
+                        {item.members.map((member, mIdx) => (
+                          <li key={mIdx} className="flex flex-col">
+                            <span className="text-xs font-bold text-brand uppercase tracking-wider mb-1">{member.role}</span>
+                            <span className="text-lg font-semibold text-foreground leading-snug">{member.name}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </Card>
+                ))}
               </div>
             </div>
-            <div className="mt-8 p-6 border border-border rounded-xl bg-background shadow-sm hover:-translate-y-1 transition-transform">
-              <h3 className="text-xl font-bold text-foreground">Komisi-Komisi</h3>
-              <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">
-                Komisi A (Aspirasi & Penyaluran), Komisi B (Pengawasan & Evaluasi), Komisi C (Hukum & Etika Disiplin)
-              </p>
-            </div>
-          </Card>
+          ))}
         </div>
       </AnimatedSection>
     </div>

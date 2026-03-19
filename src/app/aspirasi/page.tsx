@@ -1,0 +1,80 @@
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+
+export const metadata = {
+  title: "Aspirasi | MPK SMAN 24 Bandung",
+  description: "Sampaikan aspirasi kamu untuk SMAN 24 Bandung yang lebih baik.",
+};
+
+export default function Aspirasi() {
+  return (
+    <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 max-w-5xl">
+      <AnimatedSection className="text-center mb-16">
+        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4 text-foreground">
+          Aspirasi
+        </h1>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Suaramu penting untuk kemajuan dan perbaikan bersama.
+        </p>
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.1}>
+        <div className="flex flex-col lg:flex-row gap-16 items-center pt-8">
+          
+          {/* Content Column */}
+          <div className="flex-1 space-y-6 order-2 lg:order-1">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground">Aspirasi Berkala</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Aspirasi Berkala merupakan program MPK yang bertujuan untuk menampung dan menyalurkan aspirasi siswa secara rutin, sebagai bentuk partisipasi aktif dalam membangun lingkungan sekolah yang lebih baik, transparan, dan demokratis.
+              </p>
+              
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-foreground mb-4">Tujuan</h3>
+                <ul className="space-y-3">
+                  {[
+                    "Menyediakan sarana penyampaian aspirasi siswa",
+                    "Menjalin komunikasi yang efektif antara siswa dan pihak sekolah",
+                    "Mendorong keterlibatan aktif siswa dalam kehidupan sekolah",
+                    "Mendukung terciptanya lingkungan sekolah yang kondusif dan transparan"
+                  ].map((tujuan, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircle2 className="h-5 w-5 text-emerald-500 mr-3 shrink-0 mt-1" />
+                      <span className="text-lg text-muted-foreground">{tujuan}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="pt-8">
+                <Link
+                  href="https://mpk-aspirasi-website.vercel.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAQofB5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadWA-BWx9E2TnYVrnDGcQUyTZNSITjHoim5kadBJE8y1oUk0C1bB65tipsAJQ_aem_U9N5TFDcrsJq66yhdKT0aA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center rounded-full bg-black text-white dark:bg-white dark:text-black px-8 py-4 font-medium shadow-lg transition-all hover:bg-black/80 dark:hover:bg-gray-200 hover:-translate-y-1 w-full sm:w-auto text-lg"
+                >
+                  Sampaikan Aspirasimu
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+            
+            {/* Image Column */}
+            <div className="w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2">
+              <div className="relative w-full aspect-square max-w-lg hover:scale-105 transition-transform duration-700 drop-shadow-2xl">
+                <Image
+                  src="/assets/Aspirasi Berkala .png"
+                  alt="Aspirasi Berkala"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </div>
+
+        </div>
+      </AnimatedSection>
+    </div>
+  );
+}
