@@ -37,7 +37,7 @@ const orgStructure = [
     ],
   },
   {
-    category: "Komisi A (Aspirasi & Penyaluran)",
+    category: "Komisi A (Aspirator)",
     items: [
       {
         image: "/assets/Ketua Komisi A MPK.jpeg",
@@ -67,7 +67,7 @@ const orgStructure = [
     ],
   },
   {
-    category: "Komisi B (Pengawasan & Evaluasi)",
+    category: "Komisi B (Evaluator)",
     items: [
       {
         image: "/assets/Ketua Komisi B MPK.jpeg",
@@ -90,7 +90,7 @@ const orgStructure = [
     ],
   },
   {
-    category: "Komisi C (Hukum & Etika Disiplin)",
+    category: "Komisi C (Planner)",
     items: [
       {
         image: "/assets/Ketua Komisi C MPK.jpeg",
