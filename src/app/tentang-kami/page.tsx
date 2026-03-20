@@ -164,10 +164,10 @@ export default function About() {
               </div>
 
               <div className="flex flex-col flex-1">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-foreground leading-tight text-center md:text-left">
-                  Sejarah MPK & Dasar hukum MPK
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground leading-tight text-left border-b border-border/50 pb-2">
+                  Sejarah MPK
                 </h2>
-                <div className="text-sm sm:text-base text-muted-foreground mb-4 md:mb-6 text-center md:text-left space-y-4">
+                <div className="text-sm sm:text-base text-muted-foreground mb-8 text-left space-y-4 leading-relaxed">
                   <p>
                     MPK SMAN 24 Bandung didirikan pada tanggal 1 Juni 2013 dan disahkan secara resmi pada tanggal 13 September 2013.
                   </p>
@@ -175,7 +175,11 @@ export default function About() {
                     Pada awal pembentukanya, MPK SMAN 24 Bandung merupakan forum tidak tetap yang dibentuk dengan tujuan menyukseskan pemilihan ketua OSIS (Pemilu Raya). Atas berbagai pertimbangan dari Majelis Pembina OSIS (MPO), yang salah satunya adalah untuk menyeimbangkan kekuasaan organisasi sekolah, dimana OSIS sebagai eksekutor dan MPK sebagai legislator.
                   </p>
                 </div>
-                <ul className="space-y-3 md:space-y-2 mt-2">
+                
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground leading-tight text-left border-b border-border/50 pb-2">
+                  Dasar Hukum MPK
+                </h2>
+                <ul className="space-y-3 md:space-y-2 mt-2 text-left">
                   {[
                     "UU No. 20 Tahun 2003 Tentang Sistem Pendidikan Nasional",
                     "UU No. 14 Tahun 2005 Tentang Guru dan Dosen",
