@@ -28,18 +28,18 @@ export function Navbar() {
           <Image
             src="/assets/Logo_SMAN 24.png"
             alt="SMAN 24 Logo"
-            width={32}
-            height={32}
-            className="object-contain hover:scale-105 transition-transform"
+            width={40}
+            height={40}
+            className="w-9 h-9 sm:w-10 sm:h-10 object-contain hover:scale-105 transition-transform"
           />
           <Image
             src="/assets/Logo_MPK.png"
             alt="MPK Logo"
-            width={32}
-            height={32}
-            className="object-contain hover:scale-105 transition-transform"
+            width={40}
+            height={40}
+            className="w-9 h-9 sm:w-10 sm:h-10 object-contain hover:scale-105 transition-transform"
           />
-          <span className="text-[10px] sm:text-base md:text-xl font-bold tracking-tight text-foreground leading-tight max-w-[120px] sm:max-w-none">
+          <span className="text-xs sm:text-base md:text-xl font-bold tracking-tight text-foreground leading-tight max-w-[150px] sm:max-w-none">
             MPK SMAN 24 BANDUNG
           </span>
         </Link>
