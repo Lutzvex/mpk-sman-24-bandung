@@ -36,19 +36,16 @@ export default function Aspirasi() {
         <AnimatedSection delay={0.1}>
           <div className="mb-4 lg:hidden text-center md:text-left pt-6">
             <h2 className="text-3xl font-bold tracking-tight text-foreground">
-              Aspirasi Berkala
+              Aspirasi Berkala & Pohon Aspirasi
             </h2>
           </div>
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center pt-2 lg:pt-8">
             <div className="flex-1 space-y-6 order-2 lg:order-1">
               <h2 className="hidden lg:block text-3xl font-bold tracking-tight text-foreground">
-                Aspirasi Berkala
+                Aspirasi Berkala & Pohon Aspirasi
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed text-center lg:text-left">
-                Aspirasi Berkala merupakan program MPK yang bertujuan untuk
-                menampung dan menyalurkan aspirasi siswa secara rutin, sebagai
-                bentuk partisipasi aktif dalam membangun lingkungan sekolah yang
-                lebih baik, transparan, dan demokratis.
+                Aspirasi Berkala dan Pohon Aspirasi merupakan program MPK yang bertujuan untuk menampung dan menyalurkan aspirasi siswa secara rutin, baik melalui media digital maupun secara langsung, sebagai bentuk partisipasi aktif dalam membangun lingkungan sekolah yang lebih baik, transparan, dan demokratis.
               </p>
 
               <div className="mt-8">
@@ -57,9 +54,9 @@ export default function Aspirasi() {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    "Menyediakan sarana penyampaian aspirasi siswa",
+                    "Menyediakan sarana penyampaian aspirasi siswa secara rutin",
                     "Menjalin komunikasi yang efektif antara siswa dan pihak sekolah",
-                    "Mendorong keterlibatan aktif siswa dalam kehidupan sekolah",
+                    "Mendorong partisipasi aktif siswa dalam kehidupan sekolah",
                     "Mendukung terciptanya lingkungan sekolah yang kondusif dan transparan",
                   ].map((tujuan, index) => (
                     <li key={index} className="flex items-start">
@@ -86,15 +83,26 @@ export default function Aspirasi() {
                 </Link>
               </div>
             </div>
-
-            <div className="w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2">
-              <div className="relative w-full aspect-square max-w-lg hover:scale-105 transition-transform duration-700 drop-shadow-2xl">
+            {/* Image Column */}
+            <div className="w-full lg:w-1/2 flex gap-4 md:gap-8 justify-center items-center order-1 lg:order-2 px-4 sm:px-0">
+              <div className="relative w-1/2 max-w-[280px] hover:scale-105 transition-transform duration-700 drop-shadow-2xl">
                 <Image
                   src="/assets/Aspirasi Berkala .png"
                   alt="Aspirasi Berkala"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-contain"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative w-1/2 max-w-[280px] hover:scale-105 transition-transform duration-700 drop-shadow-2xl">
+                <Image
+                  src="/assets/Pohon Aspirasi MPK.jpg"
+                  alt="Pohon Aspirasi MPK"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-contain"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
             </div>

@@ -165,46 +165,33 @@ export default function About() {
 
               <div className="flex flex-col flex-1">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-foreground leading-tight text-center md:text-left">
-                  Garda Aspirasi & Demokrasi SMAN 24 Bandung
+                  Sejarah MPK & Dasar hukum MPK
                 </h2>
-                <p className="text-sm sm:text-base text-muted-foreground mb-4 md:mb-6 text-center md:text-left">
-                  Sebagai lembaga tertinggi kesiswaan, MPK mengemban tanggung
-                  jawab dalam menjaga ekosistem demokrasi sekolah melalui lima
-                  fungsi utama:
-                </p>
-                <ul className="space-y-3 md:space-y-4">
+                <div className="text-sm sm:text-base text-muted-foreground mb-4 md:mb-6 text-center md:text-left space-y-4">
+                  <p>
+                    MPK SMAN 24 Bandung didirikan pada tanggal 1 Juni 2013 dan disahkan secara resmi pada tanggal 13 September 2013.
+                  </p>
+                  <p>
+                    Pada awal pembentukanya, MPK SMAN 24 Bandung merupakan forum tidak tetap yang dibentuk dengan tujuan menyukseskan pemilihan ketua OSIS (Pemilu Raya). Atas berbagai pertimbangan dari Majelis Pembina OSIS (MPO), yang salah satunya adalah untuk menyeimbangkan kekuasaan organisasi sekolah, dimana OSIS sebagai eksekutor dan MPK sebagai legislator.
+                  </p>
+                </div>
+                <ul className="space-y-3 md:space-y-2 mt-2">
                   {[
-                    {
-                      title: "Legislasi",
-                      desc: "Menyusun dan menetapkan aturan serta kebijakan organisasi siswa yang berlandaskan nilai keadilan dan kepentingan bersama.",
-                    },
-                    {
-                      title: "Aspirasi",
-                      desc: "Menjadi jembatan komunikasi yang aktif untuk menampung ide, kritik, dan saran dari seluruh siswa SMAN 24 Bandung untuk disampaikan kepada pihak sekolah.",
-                    },
-                    {
-                      title: "Supervisi & Evaluasi",
-                      desc: "Memantau jalannya program kerja OSIS secara objektif serta memberikan penilaian performa demi kualitas kegiatan yang lebih baik.",
-                    },
-                    {
-                      title: "Kaderisasi",
-                      desc: "Menyelenggarakan proses seleksi dan uji kelayakan bagi calon pengurus OSIS untuk memastikan keberlanjutan kepemimpinan yang berintegritas.",
-                    },
-                    {
-                      title: "Advokasi",
-                      desc: "Bertindak sebagai penengah atau mediator dalam menyelesaikan permasalahan antar-organisasi maupun isu kesiswaan lainnya dengan asas keadilan.",
-                    },
+                    "UU No. 20 Tahun 2003 Tentang Sistem Pendidikan Nasional",
+                    "UU No. 14 Tahun 2005 Tentang Guru dan Dosen",
+                    "PP RI No. 32 Tahun 2013 Tentang Perubahan atas PP No. 19 Tahun 2005 Tentang Standar Nasional Pendidikan",
+                    "Peraturan Presiden No. 7 Tahun 2005 Tentang Rencana Pembangunan Jangka Menengah Nasional",
+                    "Kep. Mendikbud No. 0461/U/1984 Tentang Pembinaan Kesiswaan",
+                    "Kep. Dirjen Dikdasmen No. 226/C/0/1992 Tentang Pedoman Pembinaan Kesiswaan",
+                    "Keputusan Dirjen PDM Departemen Pendidikan dan Kebudayaan Republik Indonesia No. 239/C/KEP/N/81 Tanggal 18 Agustus 1981",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 md:gap-4">
                       <span className="font-bold text-black dark:text-white text-base md:text-lg shrink-0 leading-none mt-0.5">
                         {i + 1}.
                       </span>
                       <div className="text-xs sm:text-sm md:text-base leading-relaxed">
-                        <span className="font-bold text-foreground">
-                          {item.title}:{" "}
-                        </span>
                         <span className="text-muted-foreground">
-                          {item.desc}
+                          {item}
                         </span>
                       </div>
                     </li>

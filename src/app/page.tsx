@@ -144,7 +144,7 @@ export default function Hero() {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="mb-6 lg:hidden text-center md:text-left">
             <h3 className="text-sm font-bold tracking-widest text-brand uppercase mb-2">
-              ASPIRASI BERKALA
+              ASPIRASI BERKALA & POHON ASPIRASI
             </h3>
             <h2 className="text-3xl md:text-5xl font-extrabold text-foreground leading-tight">
               Aspirasi Membangun <br className="hidden md:block" />
@@ -157,14 +157,21 @@ export default function Hero() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
-              className="relative w-full lg:order-1 order-1 flex justify-center items-center"
+              className="relative w-full lg:order-1 order-1 flex gap-4 sm:gap-6 justify-center items-center"
             >
               <Image
                 src="/assets/Aspirasi Berkala .png"
                 alt="Aspirasi Berkala"
-                width={1200}
-                height={1200}
-                className="w-2/3 max-w-xs h-auto object-contain hover:scale-105 transition-transform duration-700 drop-shadow-2xl"
+                width={800}
+                height={1000}
+                className="w-1/2 max-w-[280px] h-auto object-contain hover:scale-105 transition-transform duration-700 drop-shadow-2xl"
+              />
+              <Image
+                src="/assets/Pohon Aspirasi MPK.jpg"
+                alt="Pohon Aspirasi MPK"
+                width={800}
+                height={1000}
+                className="w-1/2 max-w-[280px] h-auto object-contain hover:scale-105 transition-transform duration-700 drop-shadow-2xl"
               />
             </motion.div>
 
@@ -177,7 +184,7 @@ export default function Hero() {
             >
               <div className="hidden lg:block">
                 <h3 className="text-sm font-bold tracking-widest text-brand uppercase mb-3">
-                  ASPIRASI BERKALA
+                  ASPIRASI BERKALA & POHON ASPIRASI
                 </h3>
                 <h2 className="text-5xl font-extrabold text-foreground mb-6 leading-tight">
                   Aspirasi Membangun <br />
