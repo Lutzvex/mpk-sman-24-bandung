@@ -167,7 +167,7 @@ export default function About() {
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground leading-tight text-left border-b border-border/50 pb-2">
                   Sejarah MPK
                 </h2>
-                <div className="text-sm sm:text-base text-muted-foreground mb-8 text-left space-y-4 leading-relaxed">
+                <div className="text-sm sm:text-base text-muted-foreground mb-8 text-justify md:text-left space-y-4 leading-relaxed">
                   <p>
                     MPK SMAN 24 Bandung didirikan pada tanggal 1 Juni 2013 dan disahkan secara resmi pada tanggal 13 September 2013.
                   </p>
