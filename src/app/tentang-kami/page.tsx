@@ -155,7 +155,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-16 pl-4 pr-4 md:pl-0 md:pr-0">
               <div className="flex-shrink-0 flex justify-center w-full md:w-1/2 mb-4 md:mb-0">
                 <Image
-                  src="/assets/Logo_MPK.png"
+                  src="/assets/mpk.png"
                   alt="Logo MPK"
                   width={500}
                   height={500}

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "MPK SMAN 24 Bandung",
   description: "Official Website of Majelis Perwakilan Kelas SMAN 24 Bandung",
   icons: {
-    icon: "/assets/Logo_MPK.png",
-    apple: "/assets/Logo_MPK.png",
+    icon: "/assets/mpk.png",
+    apple: "/assets/mpk.png",
   },
 };
 
