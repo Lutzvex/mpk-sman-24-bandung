@@ -44,7 +44,7 @@ export default function Aspirasi() {
               <h2 className="hidden lg:block text-3xl font-bold tracking-tight text-foreground">
                 Aspirasi Berkala & Pohon Aspirasi
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed text-justify md:text-left">
+              <p className="text-lg text-muted-foreground leading-relaxed text-justify">
                 Aspirasi Berkala dan Pohon Aspirasi merupakan program MPK yang bertujuan untuk menampung dan menyalurkan aspirasi siswa secara rutin, baik melalui media digital maupun secara langsung, sebagai bentuk partisipasi aktif dalam membangun lingkungan sekolah yang lebih baik, transparan, dan demokratis.
               </p>
 

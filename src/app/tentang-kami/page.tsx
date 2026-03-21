@@ -159,7 +159,7 @@ export default function About() {
                   alt="Logo MPK"
                   width={500}
                   height={500}
-                  className="object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 w-1/2 sm:w-[40%] md:w-full max-w-[500px]"
+                  className="object-contain hover:scale-105 transition-transform duration-500 w-1/2 sm:w-[40%] md:w-full max-w-[500px]"
                 />
               </div>
 
@@ -167,7 +167,7 @@ export default function About() {
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground leading-tight text-left border-b border-border/50 pb-2">
                   Sejarah MPK
                 </h2>
-                <div className="text-sm sm:text-base text-muted-foreground mb-8 text-justify md:text-left space-y-4 leading-relaxed">
+                <div className="text-sm sm:text-base text-muted-foreground mb-8 text-justify space-y-4 leading-relaxed">
                   <p>
                     MPK SMAN 24 Bandung didirikan pada tanggal 1 Juni 2013 dan disahkan secara resmi pada tanggal 13 September 2013.
                   </p>
@@ -212,7 +212,7 @@ export default function About() {
               <div className="flex items-center mb-6 relative z-10">
                 <h2 className="text-3xl font-bold tracking-tight">VISI</h2>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed flex-1 relative z-10">
+              <p className="text-muted-foreground text-lg leading-relaxed text-justify flex-1 relative z-10">
                 Menjadikan MPK SMA Negeri 24 Bandung sebagai organisasi yang
                 profesional, inovatif, dan kreatif, berlandaskan IMTAQ dan
                 nilai-nilai kekeluargaan, dengan fokus pada solidaritas,
@@ -275,7 +275,7 @@ export default function About() {
                   [ WELCOME TRIXIIIUM ]
                 </div>
 
-                <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <div className="space-y-6 text-muted-foreground text-lg leading-relaxed text-justify">
                   <p className="font-semibold text-foreground text-xl">
                     Salam hangat, Radupat!
                   </p>

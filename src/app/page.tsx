@@ -99,7 +99,7 @@ export default function Hero() {
               <h2 className="hidden lg:block text-5xl font-extrabold text-foreground mb-6">
                 Tentang Kami
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-justify">
                 MPK SMAN 24 Bandung merupakan lembaga perwakilan siswa yang
                 berfungsi sebagai representatif kelas serta mitra kerja OSIS
                 dalam menjalankan kegiatan kesiswaan di sekolah. Melalui
@@ -191,7 +191,7 @@ export default function Hero() {
                   Masa Depan!
                 </h2>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8 md:mb-10 text-center lg:text-left">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 md:mb-10 text-justify">
                 Bantu kami membuat SMAN 24 BANDUNG menjadi lebih baik dengan
                 aspirasi kalian.
               </p>
