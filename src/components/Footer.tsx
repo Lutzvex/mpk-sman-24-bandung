@@ -17,7 +17,7 @@ export function Footer() {
                 className="object-contain"
               />
               <Image
-                src="/assets/mpk.png"
+                src="/assets/Logo_MPK.png"
                 alt="MPK Logo"
                 width={48}
                 height={48}

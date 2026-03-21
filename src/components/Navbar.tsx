@@ -33,7 +33,7 @@ export function Navbar() {
             className="w-9 h-9 sm:w-10 sm:h-10 object-contain hover:scale-105 transition-transform"
           />
           <Image
-            src="/assets/mpk.png"
+            src="/assets/Logo_MPK.png"
             alt="MPK Logo"
             width={40}
             height={40}
