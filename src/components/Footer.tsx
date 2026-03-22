@@ -63,7 +63,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/gallery"
+                  href="/galeri"
                   className="text-sm text-white/70 hover:text-brand transition-colors"
                 >
                   Galeri
@@ -71,7 +71,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/kontak"
                   className="text-sm text-white/70 hover:text-brand transition-colors"
                 >
                   Kontak

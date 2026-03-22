@@ -13,8 +13,8 @@ const links = [
   { name: "Tentang Kami", href: "/tentang-kami" },
   { name: "Programs", href: "/programs" },
   { name: "Aspirasi", href: "/aspirasi" },
-  { name: "Galeri", href: "/gallery" },
-  { name: "Kontak", href: "/contact" },
+  { name: "Galeri", href: "/galeri" },
+  { name: "Kontak", href: "/kontak" },
 ];
 
 export function Navbar() {
