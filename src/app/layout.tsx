@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MPK SMAN 24 Bandung",
-  description: "Official Website of Majelis Perwakilan Kelas SMAN 24 Bandung",
+  description: "Wadah aspirasi, pengawasan, dan legislasi siswa. Berkomitmen mewujudkan lingkungan sekolah yang transparan, kolaboratif, dan inovatif.",
   icons: {
     icon: "/assets/Logo_MPK.png",
     apple: "/assets/Logo_MPK.png",

@@ -3,8 +3,8 @@ import { Clock } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Galeri MPK | MPK SMAN 24 Bandung",
-  description: "Galeri foto dan dokumentasi kegiatan MPK SMAN 24 Bandung",
+  title: "Galeri | MPK SMAN 24 Bandung",
+  description: "Arsip visual perjalanan kepengurusan MPK SMAN 24 Bandung. Jelajahi dokumentasi lengkap dari Angkatan 1 hingga Angkatan 13 yang sedang menjabat.",
 };
 
 export default function Gallery() {

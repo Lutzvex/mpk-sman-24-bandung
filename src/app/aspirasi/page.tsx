@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Aspirasi | MPK SMAN 24 Bandung",
-  description: "Sampaikan aspirasi kamu untuk SMAN 24 Bandung yang lebih baik.",
+  description: "Ruang terbuka bagi siswa untuk menyampaikan ide, kritik, dan saran secara langsung demi mewujudkan lingkungan sekolah yang lebih baik.",
 };
 
 export default function Aspirasi() {

@@ -2,9 +2,9 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Kontak Kami | MPK SMAN 24 Bandung",
+  title: "Kontak | MPK SMAN 24 Bandung",
   description:
-    "Hubungi kami untuk menyampaikan aspirasi, masukan, atau pertanyaan Anda",
+    "Layanan komunikasi cepat melalui media sosial dan saluran resmi untuk keperluan koordinasi, kolaborasi, maupun pertanyaan umum.",
 };
 
 export default function Contact() {

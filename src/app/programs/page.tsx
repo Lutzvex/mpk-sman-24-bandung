@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Program Kerja | MPK SMAN 24 Bandung",
-  description: "Program Kerja MPK SMAN 24 Bandung",
+  description: "Daftar rencana program kerja dari komisi di MPK SMAN 24 Bandung",
 };
 
 const programsData = [

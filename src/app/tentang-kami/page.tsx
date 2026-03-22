@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Tentang Kami | MPK SMAN 24 Bandung",
   description:
-    "Visi, Misi, Garda Aspirasi, dan Pengenalan TRIXIIIUM MPK SMAN 24 Bandung.",
+    "Mengenal lebih dekat struktur sejarah, hukum, visi dan misi, struktur organisasi MPK SMAN 24 Bandung sebagai lembaga legislatif dan pengawas organisasi siswa.",
 };
 
 const orgStructure = [
